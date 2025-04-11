@@ -7,7 +7,7 @@ import gsap from 'gsap';
 
 const DemoComputer = (props) => {
   const group = useRef();
-  const { nodes, materials } = useGLTF('/public/models/computer.glb');
+  const { nodes, materials } = useGLTF('/models/computer.glb');
 
   // Load static image texture
   const texturePath = props.texture || '/public/textures/project/project1.png'; // Default to a static image
@@ -1025,6 +1025,6 @@ const DemoComputer = (props) => {
   );
 };
 
-useGLTF.preload('/public/models/computer.glb');
+useGLTF.preload('/models/computer.glb');
 
 export default DemoComputer;
